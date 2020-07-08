@@ -27,5 +27,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "repository": "git@github.com:mattk90/neobank-sample.git",
+  "author": "Mathias Klenk <mathiasklenk@gmx.de>",
+  "license": "MIT"
 }
