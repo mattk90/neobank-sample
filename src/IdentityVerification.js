@@ -9,6 +9,7 @@ import FingerprintIcon from "@material-ui/icons/Fingerprint";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import ProductPresentation from "./components/ProductPresentation";
+import VerifyButton from "@passbase/button/react";
 import Logo from "./components/Logo";
 
 const useStyles = makeStyles(theme => ({
