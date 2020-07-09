@@ -30,11 +30,15 @@ const useStyles = makeStyles(theme => ({
     width: "100%", // Fix IE 11 issue.
     marginTop: theme.spacing(4)
   },
-  btn: {
+  nextButton: {
     margin: theme.spacing(3, 0, 2),
     height: "40px",
+    color: "white",
     backgroundColor: "#000000",
-    color: "white"
+    "&:hover": {
+        //you want this to be the same as the backgroundColor above
+        backgroundColor: "#000000"
+    },
   }
 }));
 
@@ -112,7 +116,7 @@ const SignInSide = () => {
               fullWidth
               variant="contained"
               color="primary"
-              className={classes.btn}
+              className={classes.nextButton}
             >
               Next
             </Button>

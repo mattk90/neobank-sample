@@ -1,6 +1,5 @@
 import React from "react";
 import Avatar from "@material-ui/core/Avatar";
-import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Link from "@material-ui/core/Link";
 import Paper from "@material-ui/core/Paper";
@@ -37,7 +36,8 @@ const useStyles = makeStyles(theme => ({
   },
   kycDescription: {
     textAlign: "left",
-    marginTop: "20px"
+    marginTop: "20px",
+    marginBottom: "20px",
   }
 }));
 
@@ -64,17 +64,26 @@ const SignInSide = () => {
             partnered up with Passbase. Please complete the verification flow
             below to continue.
           </Typography>
+          <VerifyButton
+            apiKey=
+            {"ebb8c2f2c2b27d10a1dfdf1bd0a882455b0f5cfcfd37f2a9020d24cfbe08feaa"}
+            onFinished={(error, authKey, additionalAttributes) => {}}
+            integrationType={"signup"}
+            additionalAttributes={{
+              customer_user_id: "SOME_USER_ID"
+            }}
+            prefillAttributes={{
+              email: "",
+              country: "en"
+            }}
+            theme={{
+              accentColor: "",
+              font: "Arial"
+            }}
+          />
+
           <form className={classes.form} noValidate>
             <Grid container spacing={2} />
-            <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              color="primary"
-              className={classes.submit}
-            >
-              Next
-            </Button>
             <Grid container justify="center">
               <Grid item>
                 <Link href="/" variant="body2">

@@ -7,6 +7,6 @@
 
 ## Customizations
 
-You can customize the logoas well as the prodcuts in the `assets` folder
+You can customize the logoas well as the prodcuts in the `src/assets` folder
 
 
